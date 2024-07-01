@@ -9,7 +9,7 @@ module "vpc" {
   enable_vpn_gateway = false
 }
 
-ouput "vpc_id" {
+output "vpc_id" {
   value = module.vpc.vpc_id
 }
 
