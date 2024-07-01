@@ -8,3 +8,15 @@ module "vpc" {
   enable_nat_gateway = false
   enable_vpn_gateway = false
 }
+
+ouput "vpc_id" {
+  value = module.vpc.vpc_id
+}
+
+output public_subnets {
+  value = module.vpc.public_subnets
+}
+
+output private_subnets {
+  value = module.vpc.private_subnets
+}
